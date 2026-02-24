@@ -1,0 +1,87 @@
+// DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
+
+// ignore_for_file: constant_identifier_names
+
+abstract class  LocaleKeys {
+  static const common_home = 'common.home';
+  static const common_search = 'common.search';
+  static const common_favorite = 'common.favorite';
+  static const common_profile = 'common.profile';
+  static const common_settings = 'common.settings';
+  static const common_see_more = 'common.see_more';
+  static const common_welcome = 'common.welcome';
+  static const common_book = 'common.book';
+  static const common = 'common';
+  static const onboarding_page1_title = 'onboarding.page1_title';
+  static const onboarding_page1_desc = 'onboarding.page1_desc';
+  static const onboarding_page2_title = 'onboarding.page2_title';
+  static const onboarding_page2_desc = 'onboarding.page2_desc';
+  static const onboarding_skip = 'onboarding.skip';
+  static const onboarding_get_started = 'onboarding.get_started';
+  static const onboarding = 'onboarding';
+  static const home_plan_now = 'home.plan_now';
+  static const home_optimize_cost = 'home.optimize_cost';
+  static const home_where_go = 'home.where_go';
+  static const home_suggest_plan = 'home.suggest_plan';
+  static const home_dalat_title = 'home.dalat_title';
+  static const home_days_nights = 'home.days_nights';
+  static const home_price = 'home.price';
+  static const home = 'home';
+  static const search_next_trip = 'search.next_trip';
+  static const search_choose_destination = 'search.choose_destination';
+  static const search_destination = 'search.destination';
+  static const search_travel_style = 'search.travel_style';
+  static const search_hanoi = 'search.hanoi';
+  static const search_hanoi_desc = 'search.hanoi_desc';
+  static const search_danang = 'search.danang';
+  static const search_danang_desc = 'search.danang_desc';
+  static const search_hochiminh = 'search.hochiminh';
+  static const search_hochiminh_desc = 'search.hochiminh_desc';
+  static const search = 'search';
+  static const profile_title = 'profile.title';
+  static const profile_welcome_message = 'profile.welcome_message';
+  static const profile = 'profile';
+  static const settings_title = 'settings.title';
+  static const settings_welcome_message = 'settings.welcome_message';
+  static const settings = 'settings';
+  static const travel_type_chill = 'travel_type.chill';
+  static const travel_type_adventure = 'travel_type.adventure';
+  static const travel_type_cultural = 'travel_type.cultural';
+  static const travel_type_food = 'travel_type.food';
+  static const travel_type_nature = 'travel_type.nature';
+  static const travel_type = 'travel_type';
+  static const splash_tagline = 'splash.tagline';
+  static const splash = 'splash';
+  static const auth_login_title = 'auth.login_title';
+  static const auth_login_subtitle = 'auth.login_subtitle';
+  static const auth_register_title = 'auth.register_title';
+  static const auth_register_subtitle = 'auth.register_subtitle';
+  static const auth_email = 'auth.email';
+  static const auth_email_hint = 'auth.email_hint';
+  static const auth_password = 'auth.password';
+  static const auth_password_hint = 'auth.password_hint';
+  static const auth_confirm_password = 'auth.confirm_password';
+  static const auth_confirm_password_hint = 'auth.confirm_password_hint';
+  static const auth_full_name = 'auth.full_name';
+  static const auth_full_name_hint = 'auth.full_name_hint';
+  static const auth_forgot_password = 'auth.forgot_password';
+  static const auth_or = 'auth.or';
+  static const auth_login_button = 'auth.login_button';
+  static const auth_register_button = 'auth.register_button';
+  static const auth_google = 'auth.google';
+  static const auth_apple = 'auth.apple';
+  static const auth_no_account = 'auth.no_account';
+  static const auth_have_account = 'auth.have_account';
+  static const auth_sign_up = 'auth.sign_up';
+  static const auth_sign_in = 'auth.sign_in';
+  static const auth_terms = 'auth.terms';
+  static const auth_skip = 'auth.skip';
+  static const auth = 'auth';
+  static const exception_has_error = 'exception.has_error';
+  static const exception_lost_connection = 'exception.lost_connection';
+  static const exception_unauthorized = 'exception.unauthorized';
+  static const exception_socket_error = 'exception.socket_error';
+  static const exception_json_malformed = 'exception.json_malformed';
+  static const exception = 'exception';
+
+}

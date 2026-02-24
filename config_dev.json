@@ -1,0 +1,8 @@
+{
+    "BASE_URL": "https://api-dev.example.com",
+    "WS_URL": "wss://ws-dev.example.com",
+    "TERMS": "https://example.com/terms",
+    "PRIVACY": "https://example.com/privacy",
+    "REFUND": "https://example.com/refund",
+    "CLIENT_BEARER": "dev-bearer-token"
+}

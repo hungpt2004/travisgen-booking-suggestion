@@ -1,0 +1,92 @@
+{
+    "common": {
+        "home": "Home",
+        "search": "Search",
+        "favorite": "Favorite",
+        "profile": "Profile",
+        "settings": "Settings",
+        "see_more": "See more",
+        "welcome": "Welcome to",
+        "book": "Book Now"
+    },
+    "onboarding": {
+        "page1_title": "Smart Trip Planning",
+        "page1_desc": "Just pick your destination and let the app build the perfect itinerary — saving your time, maximizing your adventure.",
+        "page2_title": "Explore the World",
+        "page2_desc": "Thousands of amazing destinations await. From ancient old towns to endless blue beaches — all in one app.",
+        "skip": "Skip",
+        "get_started": "Get Started"
+    },
+    "home": {
+        "plan_now": "Plan now",
+        "optimize_cost": "AI will help you optimize travel costs",
+        "where_go": "Where do you want to go?",
+        "suggest_plan": "Suggested itinerary",
+        "dalat_title": "Da Lat: Chill & Coffee",
+        "days_nights": "{days} days - {nights} nights",
+        "price": "{price}k"
+    },
+    "search": {
+        "next_trip": "Next trip?",
+        "choose_destination": "Choose destination and we'll handle the itinerary",
+        "destination": "Destination",
+        "travel_style": "Travel style",
+        "hanoi": "Hanoi",
+        "hanoi_desc": "Thousand-year capital",
+        "danang": "Da Nang",
+        "danang_desc": "City worth living",
+        "hochiminh": "Ho Chi Minh",
+        "hochiminh_desc": "Glorious Saigon"
+    },
+    "profile": {
+        "title": "Profile Page",
+        "welcome_message": "Welcome to the Profile Page!"
+    },
+    "settings": {
+        "title": "Setting Page",
+        "welcome_message": "Welcome to the Setting Page!"
+    },
+    "travel_type": {
+        "chill": "Relaxation",
+        "adventure": "Adventure",
+        "cultural": "Cultural",
+        "food": "Cuisine",
+        "nature": "Nature"
+    },
+    "splash": {
+        "tagline": "Explore Vietnam, your way"
+    },
+    "auth": {
+        "login_title": "Welcome back",
+        "login_subtitle": "Sign in to continue your journey",
+        "register_title": "Create account",
+        "register_subtitle": "Start exploring the world today",
+        "email": "Email",
+        "email_hint": "your@email.com",
+        "password": "Password",
+        "password_hint": "••••••••",
+        "confirm_password": "Confirm Password",
+        "confirm_password_hint": "••••••••",
+        "full_name": "Full Name",
+        "full_name_hint": "Your full name",
+        "forgot_password": "Forgot Password?",
+        "or": "or",
+        "login_button": "Sign In",
+        "register_button": "Create Account",
+        "google": "Continue with Google",
+        "apple": "Continue with Apple",
+        "no_account": "Don't have an account?",
+        "have_account": "Already have an account?",
+        "sign_up": "Sign Up",
+        "sign_in": "Sign In",
+        "terms": "I agree to the Terms of Service & Privacy Policy",
+        "skip": "Explore first"
+    },
+    "exception": {
+        "has_error": "An error occurred",
+        "lost_connection": "Lost internet connection",
+        "unauthorized": "Unauthorized access",
+        "socket_error": "Cannot connect to server",
+        "json_malformed": "Data parsing error"
+    }
+}

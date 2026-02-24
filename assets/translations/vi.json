@@ -1,0 +1,92 @@
+{
+    "common": {
+        "home": "Trang chủ",
+        "search": "Tìm kiếm",
+        "favorite": "Yêu thích",
+        "profile": "Hồ sơ",
+        "settings": "Cài đặt",
+        "see_more": "Xem thêm",
+        "welcome": "Chào mừng đến với",
+        "book": "Đặt ngay"
+    },
+    "onboarding": {
+        "page1_title": "Lên lịch thông minh",
+        "page1_desc": "Chỉ cần chọn điểm đến, ứng dụng tự động lên hành trình hoàn hảo — tiết kiệm thời gian, tối ưu trải nghiệm.",
+        "page2_title": "Khám phá thế giới",
+        "page2_desc": "Hàng nghìn điểm đến hấp dẫn đang chờ bạn. Từ phố cổ yên bình đến biển xanh bất tận — tất cả trong một ứng dụng.",
+        "skip": "Bỏ qua",
+        "get_started": "Bắt đầu ngay"
+    },
+    "home": {
+        "plan_now": "Lên kế hoạch ngay",
+        "optimize_cost": "Ai sẽ giúp bạn tối ưu chi phí hành trình",
+        "where_go": "Bạn muốn đi đâu?",
+        "suggest_plan": "Lịch trình gợi ý",
+        "dalat_title": "Đà Lạt: Chill & Coffee",
+        "days_nights": "{days} ngày - {nights} đêm",
+        "price": "{price}k"
+    },
+    "search": {
+        "next_trip": "Chuyến đi tiếp theo?",
+        "choose_destination": "Chọn điểm đến và tụi mình lo lịch trình nha",
+        "destination": "Điểm đến",
+        "travel_style": "Gu du lịch",
+        "hanoi": "Hà Nội",
+        "hanoi_desc": "Thủ đô ngàn năm",
+        "danang": "Đà Nẵng",
+        "danang_desc": "Thành phố đáng sống",
+        "hochiminh": "Hồ Chí Minh",
+        "hochiminh_desc": "Sài gòn hoa lệ"
+    },
+    "profile": {
+        "title": "Trang Hồ sơ",
+        "welcome_message": "Chào mừng đến với Trang Hồ sơ!"
+    },
+    "settings": {
+        "title": "Cài đặt",
+        "welcome_message": "Chào mừng đến với Trang Cài đặt!"
+    },
+    "travel_type": {
+        "chill": "Nghỉ dưỡng",
+        "adventure": "Phiêu lưu",
+        "cultural": "Văn hóa",
+        "food": "Ẩm thực",
+        "nature": "Thiên nhiên"
+    },
+    "splash": {
+        "tagline": "Khám phá Việt Nam theo cách của bạn"
+    },
+    "auth": {
+        "login_title": "Chào trở lại",
+        "login_subtitle": "Đăng nhập để tiếp tục hành trình",
+        "register_title": "Tạo tài khoản",
+        "register_subtitle": "Bắt đầu khám phá thế giới ngay hôm nay",
+        "email": "Email",
+        "email_hint": "email@cua.ban",
+        "password": "Mật khẩu",
+        "password_hint": "••••••••",
+        "confirm_password": "Xác nhận mật khẩu",
+        "confirm_password_hint": "••••••••",
+        "full_name": "Họ và tên",
+        "full_name_hint": "Tên đầy đủ của bạn",
+        "forgot_password": "Quên mật khẩu?",
+        "or": "hoặc",
+        "login_button": "Đăng nhập",
+        "register_button": "Tạo tài khoản",
+        "google": "Tiếp tục với Google",
+        "apple": "Tiếp tục với Apple",
+        "no_account": "Chưa có tài khoản?",
+        "have_account": "Đã có tài khoản?",
+        "sign_up": "Đăng ký",
+        "sign_in": "Đăng nhập",
+        "terms": "Tôi đồng ý với Điều khoản dịch vụ và Chính sách bảo mật",
+        "skip": "Khám phá trước"
+    },
+    "exception": {
+        "has_error": "Đã có lỗi xảy ra",
+        "lost_connection": "Mất kết nối internet",
+        "unauthorized": "Truy cập không hợp lệ",
+        "socket_error": "Không thể kết nối đến máy chủ",
+        "json_malformed": "Lỗi xử lý dữ liệu"
+    }
+}
