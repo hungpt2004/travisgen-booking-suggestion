@@ -69,6 +69,7 @@ class _OnboardingViewState extends State<OnboardingView> {
               itemCount: onboardingItems.length,
               itemBuilder: (_, index) => OnboardingPageItem(
                 item: onboardingItems[index],
+                pageController: _pageController,
                 indicator: OnboardingIndicator(currentIndex: _currentIndex, count: onboardingItems.length),
               ),
             ),

@@ -51,7 +51,7 @@ class AppBottomNavBar extends StatelessWidget {
                       onTap: () => context.read<NavigationCubit>().navigateToSearch(),
                     ),
                     BottomNavBarItem(
-                      icon: Assets.root.icHeart.path,
+                      icon: Assets.root.icLove.path,
                       label: LocaleKeys.common_favorite.tr(),
                       isSelected: state.selectedItem == NavBarItem.favorite,
                       onTap: () => context.read<NavigationCubit>().navigateToFavorite(),
