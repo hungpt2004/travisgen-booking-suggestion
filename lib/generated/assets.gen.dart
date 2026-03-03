@@ -62,8 +62,19 @@ class $AssetsImagesGen {
   /// File path: assets/images/mangden.jpg
   AssetGenImage get mangden => const AssetGenImage('assets/images/mangden.jpg');
 
+  /// File path: assets/images/onboarding.png
+  AssetGenImage get onboarding =>
+      const AssetGenImage('assets/images/onboarding.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [dalat, danang, hanoi, hochiminh, mangden];
+  List<AssetGenImage> get values => [
+    dalat,
+    danang,
+    hanoi,
+    hochiminh,
+    mangden,
+    onboarding,
+  ];
 }
 
 class $AssetsRootGen {
@@ -98,6 +109,9 @@ class $AssetsRootGen {
   SvgGenImage get icLocation =>
       const SvgGenImage('assets/root/ic_location.svg');
 
+  /// File path: assets/root/ic_love.svg
+  SvgGenImage get icLove => const SvgGenImage('assets/root/ic_love.svg');
+
   /// File path: assets/root/ic_person.svg
   SvgGenImage get icPerson => const SvgGenImage('assets/root/ic_person.svg');
 
@@ -127,6 +141,7 @@ class $AssetsRootGen {
     icHeart,
     icHome,
     icLocation,
+    icLove,
     icPerson,
     icSearch,
     icSetting,

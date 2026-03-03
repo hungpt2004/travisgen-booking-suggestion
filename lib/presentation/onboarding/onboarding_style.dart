@@ -54,7 +54,7 @@ class OnboardingStyle extends ThemeExtension<OnboardingStyle> {
     const primary = AppColor.primaryDeepBlue;
     const accent = AppColor.secondaryDeepYellow;
     return OnboardingStyle(
-      background: const Color(0xFFF5F7FF),
+      background: AppColor.backgroundColor,
       primaryColor: primary,
       accentColor: accent,
       indicatorActive: primary,

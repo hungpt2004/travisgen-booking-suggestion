@@ -12,7 +12,11 @@ class OnboardingPageItem extends StatelessWidget {
   final OnboardingItem item;
   final OnboardingIndicator indicator;
 
-  const OnboardingPageItem({super.key, required this.item, required this.indicator});
+  /// PageController được dùng thay currentIndex để lấy giá trị
+  /// fractional liên tục trong lúc kéo (smooth crossfade).
+  final PageController pageController;
+
+  const OnboardingPageItem({super.key, required this.item, required this.indicator, required this.pageController});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +24,7 @@ class OnboardingPageItem extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          ImageArea(item: item, style: style),
+          ImageArea(style: style, pageController: pageController),
           indicator,
           AppSize.h16,
           Expanded(
@@ -49,35 +53,70 @@ class OnboardingPageItem extends StatelessWidget {
   }
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// ImageArea — crossfade mượt theo gesture nhờ PageController fractional value
+// ─────────────────────────────────────────────────────────────────────────────
 class ImageArea extends StatelessWidget {
-  final OnboardingItem item;
   final OnboardingStyle style;
+  final PageController pageController;
 
-  const ImageArea({super.key, required this.item, required this.style});
+  const ImageArea({super.key, required this.style, required this.pageController});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: OnboardingStyle.imageAreaHeight,
-      child: Stack(
-        children: [
-          Positioned(
-            left: 0,
-            top: 20,
-            child: ImageItem(itemPath: Assets.images.mangden.path, style: style),
-          ),
-          Positioned(
-            left: 89,
-            top: 60,
-            child: ImageItem(itemPath: Assets.images.hochiminh.path, style: style),
-          ),
-          Positioned(
-            left: 192,
-            top: 90,
-            child: ImageItem(itemPath: Assets.images.hanoi.path, style: style),
-          ),
-        ],
-      ).padSym(h: 12),
+      child: AnimatedBuilder(
+        animation: pageController,
+        builder: (context, _) {
+          // Lấy giá trị page liên tục 0.0 → 1.0 trong khi kéo
+          final page = pageController.hasClients ? (pageController.page ?? 0.0) : 0.0;
+          // progress: 0.0 = page 0 hoàn toàn, 1.0 = page 1 hoàn toàn
+          final progress = page.clamp(0.0, 1.0);
+
+          return Stack(
+            children: [
+              // Layout page 0: Stack 3 ảnh
+              Opacity(
+                opacity: (1.0 - progress).clamp(0.0, 1.0),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: OnboardingStyle.imageAreaHeight,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 20,
+                        child: ImageItem(itemPath: Assets.images.mangden.path, style: style),
+                      ),
+                      Positioned(
+                        left: 89,
+                        top: 60,
+                        child: ImageItem(itemPath: Assets.images.hochiminh.path, style: style),
+                      ),
+                      Positioned(
+                        left: 192,
+                        top: 90,
+                        child: ImageItem(itemPath: Assets.images.hanoi.path, style: style),
+                      ),
+                    ],
+                  ).padSym(h: 12),
+                ),
+              ),
+
+              // Layout page 1: ảnh đơn onboarding
+              Opacity(
+                opacity: progress.clamp(0.0, 1.0),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: OnboardingStyle.imageAreaHeight,
+                  child: Assets.images.onboarding.image(fit: BoxFit.cover),
+                ),
+              ),
+            ],
+          );
+        },
+      ),
     );
   }
 }
